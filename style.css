@@ -11,13 +11,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  width: 100vw;
   color: #fefefe;
 }
 
 .container {
-  width: 40vw;
-  height: 60vh;
+  margin: auto;
+  margin-top: 5em;
 }
 
 .watch {
@@ -42,8 +42,10 @@ body {
 }
 
 .btn {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   background-color: #173450;
   background-color: rgb(56 58 75);
   box-shadow: -6px 11px 5px 2px #2d174c;
@@ -54,5 +56,36 @@ body {
   border-radius: 23px;
   outline: none;
   margin: 12px 18px;
-  font-size: 23px;
+  font-size: 32px;
+  font-family: "Roboto";
+}
+
+#start {
+  background-color: cornflowerblue;
+  border: none;
+  box-shadow: 2px 2px 2px 3px #232b2d;
+}
+
+#pause {
+  background-color: rgb(104, 64, 32);
+  border: none;
+  box-shadow: 2px 2px 2px 3px #502308;
+}
+
+#reset {
+  background-color: crimson;
+  border: none;
+  box-shadow: 2px 2px 2px 3px #2b0606;
+}
+
+#laps {
+  background-color: rgb(18, 72, 18);
+  border: none;
+  box-shadow: 2px 2px 2px 3px #022603;
+}
+
+#reset-laps {
+  background-color: rgb(74, 9, 82);
+  border: none;
+  box-shadow: 2px 2px 2px 3px #17021a;
 }
